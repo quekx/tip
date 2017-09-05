@@ -33,20 +33,18 @@ Client Secret
 url:
 GET http://github.com/login/oauth/authorize
 
-
 http://github.com/login/oauth/authorize?client_id=180efe4cfa28f24da32a&state=xxxxxxxxxxx
-
-未登录：
-![](https://raw.githubusercontent.com/quekx/tip/master/img2.png)
-
-已登录：
-![](https://raw.githubusercontent.com/quekx/tip/master/img3.png)
 
 
 - 获取token
 
+重定向结果：
+http://kaixque.oauth.qq.com/?code=694e707ef5192915e5ac&state=xxxxxxxxxxx
+
 url:
 POST https://github.com/login/oauth/access_token
 
+![](https://raw.githubusercontent.com/quekx/tip/master/img4.png)
 
+![](https://raw.githubusercontent.com/quekx/tip/master/img5.png)
 
