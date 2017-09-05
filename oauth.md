@@ -17,8 +17,8 @@ https://developer.github.com/apps/building-integrations/setting-up-and-registeri
 首先登录github在页面中注册应用
 https://github.com/settings/applications/new
 
-例：
-![注册应用](http://obvvfkok4.bkt.clouddn.com/oauth_new_app_meitu_1.jpg)
+注册：
+![注册应用](https://raw.githubusercontent.com/quekx/tip/master/img1.png)
 
 
 Client ID
@@ -36,6 +36,11 @@ GET http://github.com/login/oauth/authorize
 
 http://github.com/login/oauth/authorize?client_id=180efe4cfa28f24da32a&state=xxxxxxxxxxx
 
+未登录：
+![](https://raw.githubusercontent.com/quekx/tip/master/img2.png)
+
+已登录：
+![](https://raw.githubusercontent.com/quekx/tip/master/img3.png)
 
 
 - 获取token
