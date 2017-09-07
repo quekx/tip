@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0081)http://cost.oa.com/costv5web/Pages/Cost/Print.aspx?ApplicationID=E6105B0A18CEC130 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	打印费用申请单
+</title><link type="text/css" rel="Stylesheet" href="./打印费用申请单_files/default.css"><link type="text/css" rel="Stylesheet" href="./打印费用申请单_files/grid.css">
+    <style media="print" type="text/css">
+        .printTime
+        {
+            display: block;
+        }
+        .title
+        {
+            font-weight: bold;
+            font-size: medium;
+            border: none 0px #fff;
+        }
+    </style>
+    <style type="text/css" media="screen">
+        .printTime
+        {
+            display: none;
+        }
+        .printLabel
+        {
+            text-indent: 10px;
+        }
+        .title
+        {
+            font-weight: bold;
+            font-size: 26px;
+        }
+        .LineMemo
+        {
+            scrollbar-face-color: white;
+            text-kashida-space: 22;
+            background-image: url(../../Images/TxtLine.jpg);
+            scrollbar-highlight-color: white;
+            scrollbar-shadow-color: white;
+            scrollbar-3dlight-color: white;
+            border-top-style: none;
+            line-height: 23px;
+            scrollbar-arrow-color: blue;
+            scrollbar-track-color: white;
+            border-right-style: none;
+            scrollbar-darkshadow-color: white;
+            scrollbar-base-color: white;
+            border-left-style: none;
+            border-bottom-style: none;
+            height: 100%;
+        }
+        .nowrap
+        {
+            white-space:nowrap;
+        }
+
+    </style>
+
+    <script language="javascript" type="text/javascript" src="./打印费用申请单_files/jquery-1.6.3.min.js.下载"></script>
+    <script language="javascript" type="text/javascript" src="./打印费用申请单_files/common.js.下载"></script>
+</head>
+<body id="type-1">
+    <form name="aspnetForm" method="post" action="http://cost.oa.com/costv5web/Pages/Cost/Print.aspx?ApplicationID=E6105B0A18CEC130" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="_CVS" id="_CVS" value="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">
+<input type="hidden" name="__VIEWSTATE" id="
+__VIEWSTATE" value="">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./打印费用申请单_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./打印费用申请单_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./打印费用申请单_files/ScriptResource(1).axd" type="text/javascript"></script>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptMgr', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+//]]>
+</script>
+
+    
+    <table id="Table1" style="" width="640" align="center" border="0" cellspacing="2" cellpadding="0">
+        <tbody><tr>   
+            <td colspan="2">
+                <div style="height: 70px; text-align: left">
+                    <div style="height: 50px;">
+                        <span><span id="ctl00_BodyContent_lbMark" style="font-size:Large;"> ER104 ★</span></span>
+                    </div>
+                    <div><span style="font-size:12pt">装订线上方3.5cm留白，禁止书写，禁止粘贴票据。请不要把多张申请单粘贴在一起</span></div>
+                </div>
+                <img alt="" src="./打印费用申请单_files/3_5CM_2.png"></td>
+        </tr>        
+        <tr>   
+            <td colspan="2">
+                <div style="float: right; padding: 0px; margin: 0px;">
+                    <nobr>
+				
+				<span id="ctl00_BodyContent_lbTitle" style="font-size:Medium;font-weight:bold;">报销申请单-市内交通费-104-OMG-V6</span>
+				&nbsp;&nbsp;
+				<img id="ctl00_BodyContent_imgBarCode" src="./打印费用申请单_files/Barcode.aspx" style="border-width:0px;">
+				</nobr>
+                </div>
+            </td>
+        </tr>
+         
+        <tr>
+            <td align="left" width="30%">
+                <span id="ctl00_BodyContent_lbMsg" class="redText" style="display:none">提示：此申请单尚未审核完毕</span>
+            </td>
+            <td align="right" height="25">
+                
+<style media="print">
+	.noprint { DISPLAY: none } 
+</style>
+
+<div class="noprint"><font face="宋体" color="red">若无法使用[打印本页]按钮，请在网页空白处点击鼠标右键选择其中的打印</font></div>
+<div class="noprint">
+	<a href="http://cost.oa.com/CostV5Web/Help/InvoiceDemo.html#00|市内交通费粘贴模板" id="ctl00_BodyContent_PrintBar1_aExpenseBtn" style="font-weight: bold; font-size: 13pt" target="_blank">报销票据粘贴模板</a>
+	<input onclick="print_win();" type="button" value="打印本页">
+	<input type="button" onclick="pagesetup();" value="页面设置" style="display: none">
+	<input onclick="preview();" type="button" value="打印预览" style="display: none">
+	<input id="idPrint4" onclick="window.opener=null;window.close();" type="button" value="关闭窗口">
+</div>
+<script>
+window.focus();
+</script>
+<script type="text/javascript">
+var factory = document.getElementById("factory");
+function print_win() {
+    window.print();
+    /*
+    try {
+        factory.printing.Print(false);
+        //__doPostBack('lkbStopSend','');
+    }
+    catch (E) {
+        //alert("未能加载打印插件，请点击鼠标右键，在快捷菜单中选择“打印”");
+        window.print();
+       
+    }*/
+}
+
+function preview() {
+    /*
+    try 
+    {
+        factory.printing.Preview();
+    }
+    catch (E) 
+    {
+        alert("未能加载打印插件，请点击鼠标右键，在快捷菜单中选择“打印预览”");
+        //window.printpr(); 
+    }*/
+}
+
+function pagesetup() {
+    /*try 
+    {
+        factory.printing.PageSetup();
+    }
+    catch (E) 
+    {
+        alert("未能加载打印插件，请点击鼠标右键，在快捷菜单中选择“打印”");
+        //window.printpr(); 
+    }*/
+}
+
+
+function init() {
+
+    try {
+        /*
+        factory.printing.header = '';
+        factory.printing.footer = '';
+        factory.printing.portrait = true;
+        */
+        //	factory.printing.leftMargin = 15;
+        //	factory.printing.bottomMargin = 12;
+    }
+    catch (E) {}
+}
+init();
+</script>               
+            </td>            
+        </tr>       
+        <tr>
+            <td align="left" height="30">
+                <div style="font-size: medium; font-weight: bold;">请投递于<span id="ctl00_BodyContent_lblBox" style="font-size:XX-Large;">B</span>箱中</div>
+            </td>
+            <td align="right">
+                <span>打印日期：2017-09-07 &nbsp;&nbsp;&nbsp;<span id="ctl00_BodyContent_lbInvoiceNum"></span></span>               
+            </td>
+        </tr>
+    </tbody></table>
+    <table id="Table2" style="border-collapse: collapse; text-align: left; table-layout: fixed;" bordercolor="#000000" cellspacing="1" height="700px" cellpadding="0" width="630" align="center" border="1">
+        <tbody><tr bgcolor="#ffffff">
+            <td width="100" height="35" class="printLabel">
+                申 请 代 码：
+            </td>
+            <td width="215">
+                <span id="ctl00_BodyContent_lbApplicationNo">C104-170907-2987514</span>
+            </td>
+            <td width="100" class="printLabel">
+                费用申请人：
+            </td>
+            <td width="215">
+                <span id="ctl00_BodyContent_lbApplicant">kaixque(阙凯昕)</span>
+                
+            </td>
+        </tr>
+        <tr bgcolor="#ffffff">
+            <td height="35" class="printLabel">
+                付 款 单 位：
+            </td>
+            <td>
+                <span id="ctl00_BodyContent_lbOrg" style="word-break: break-all;">腾讯科技(北京)有限公司</span>
+            </td>
+            <td class="printLabel">
+                申 请 金 额：
+            </td>
+            <td>
+                <span id="ctl00_BodyContent_lbAmount">285.00</span>
+                <span id="ctl00_BodyContent_lbCurrType">人民币</span>
+            </td>
+        </tr>
+        <tr bgcolor="#ffffff">
+            <td height="35" class="printLabel">
+                部 门 (BU)：
+            </td>
+            <td>
+                <span id="ctl00_BodyContent_lbDept">区域业务部(OMG网络媒体事业群)</span>
+            </td>
+            <td class="printLabel">
+                费 用 类 别：
+            </td>
+            <td>
+                <span id="ctl00_BodyContent_lbCostType">夜间及其他市内交通费</span>
+            </td>
+        </tr>
+        <tr bgcolor="#ffffff">
+            <td height="35" class="printLabel">
+                成 本 中 心：
+            </td>
+            <td>
+                <span id="ctl00_BodyContent_lbCostCenter">区域业务部-公共</span>
+            </td>
+            <td class="printLabel">
+                科 目 名 称：
+            </td>
+            <td>
+                <span id="ctl00_BodyContent_lbAccountName">主营业务成本-差旅费-市内交通费</span>
+            </td>
+        </tr>
+        <tr style="display: none" bgcolor="#ffffff">
+            <td height="35" class="printLabel">
+                类 型：
+            </td>
+            <td>
+                <span id="ctl00_BodyContent_lbApplyType">市内交通费</span>
+            </td>
+            <td class="printLabel">
+                罚&nbsp;&nbsp;金：
+            </td>
+            <td>
+                <span id="ctl00_BodyContent_lbAmercement">0.00</span>
+                <span id="ctl00_BodyContent_lbActualAmount">(实际支付：285)</span>
+            </td>
+        </tr>
+        <tr style="display: none">
+            <td height="35" class="printLabel">
+                科 目 ID：
+            </td>
+            <td>
+                <span id="ctl00_BodyContent_lbAccountID">54010203</span>
+            </td>
+            <td class="printLabel">
+                片 区：
+            </td>
+            <td>
+                <span id="ctl00_BodyContent_lbRegion">京津片区-公共</span>
+            </td>
+        </tr>
+        <tr id="ctl00_BodyContent_trDetail">
+	<td height="35" class="printLabel" valign="top">
+                费 用 明 细：
+            </td>
+	<td colspan="3" valign="top" style="word-break: break-all;">
+                <table cellspacing="0" cellpadding="2" rules="all" border="1" id="ctl00_BodyContent_dgDetail" style="border-width:1px;border-style:solid;width:100%;border-collapse:collapse;margin: 0px;">
+		<tbody><tr align="center">
+			<td style="width:40px;">No.</td><td>时间</td><td>事由</td><td>接收金额</td>
+		</tr><tr>
+			<td align="center">1</td><td style="width:155px;">
+                                2017-07-06
+                                至
+                                2017-07-06
+                            </td><td>银科-回龙观新村（朋友家）</td><td class="nowrap" align="right">43.00</td>
+		</tr><tr>
+			<td align="center">2</td><td style="width:155px;">
+                                2017-07-10
+                                至
+                                2017-07-10
+                            </td><td>银科-回龙观新村</td><td class="nowrap" align="right">41.00</td>
+		</tr><tr>
+			<td align="center">3</td><td style="width:155px;">
+                                2017-07-12
+                                至
+                                2017-07-12
+                            </td><td>银科-北京邮电大学（学校）</td><td class="nowrap" align="right">20.00</td>
+		</tr><tr>
+			<td align="center">4</td><td style="width:155px;">
+                                2017-07-27
+                                至
+                                2017-07-27
+                            </td><td>银科-北京邮电大学</td><td class="nowrap" align="right">21.00</td>
+		</tr><tr>
+			<td align="center">5</td><td style="width:155px;">
+                                2017-07-28
+                                至
+                                2017-07-28
+                            </td><td>银科-回龙观新村</td><td class="nowrap" align="right">39.00</td>
+		</tr><tr>
+			<td align="center">6</td><td style="width:155px;">
+                                2017-07-31
+                                至
+                                2017-07-31
+                            </td><td>银科-北京邮电大学</td><td class="nowrap" align="right">20.00</td>
+		</tr><tr>
+			<td align="center">7</td><td style="width:155px;">
+                                2017-08-01
+                                至
+                                2017-08-01
+                            </td><td>银科-回龙观新村</td><td class="nowrap" align="right">37.00</td>
+		</tr><tr>
+			<td align="center">8</td><td style="width:155px;">
+                                2017-08-08
+                                至
+                                2017-08-08
+                            </td><td>银科-北京邮电大学</td><td class="nowrap" align="right">21.00</td>
+		</tr><tr>
+			<td align="center">9</td><td style="width:155px;">
+                                2017-08-14
+                                至
+                                2017-08-14
+                            </td><td>银科-回龙观新村</td><td class="nowrap" align="right">43.00</td>
+		</tr>
+	</tbody></table>
+            </td>
+</tr>
+
+        
+        
+        
+        
+        
+        <tr bgcolor="#ffffff" id="trMemo" style="height: 100%;">
+            <td valign="top" class="printLabel">
+                事 由：
+            </td>
+            <td colspan="3" valign="top">
+                <span id="ctl00_BodyContent_lbMemo" style="height: 100%; word-break: break-all;">7-8月夜间加班交通的士费报销</span>
+            </td>
+        </tr>
+        <tr bgcolor="#ffffff">
+            <td valign="middle" height="35" class="printLabel">
+                创 建 时 间：
+            </td>
+            <td>
+                <span id="ctl00_BodyContent_lbCreatedTime">2017-09-07 13:15</span>
+            </td>
+            <td class="printLabel">
+                创 建 人：
+            </td>
+            <td>
+                <span id="ctl00_BodyContent_lbCreatedBy">kaixque(阙凯昕)</span>
+                
+            </td>
+        </tr>
+        <tr id="ctl00_BodyContent_trFMSetting">
+	<td valign="middle" height="35" class="printLabel">
+            财务接口人：
+            </td>
+	<td>
+                <span id="ctl00_BodyContent_lbFMSetting">连线财经-财经咨询(8003)</span>
+            </td>
+	<td>
+            <span id="ctl00_BodyContent_wechatScanLabel" style="padding-left:10px;">微信扫描收单：</span>
+				
+				
+            </td>
+	<td>
+            <img id="ctl00_BodyContent_imgQRCode" src="./打印费用申请单_files/QRcode.aspx" style="border-width:0px;">
+            </td>
+</tr>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <tr height="35" class="printLabel">
+            <td colspan="4" align="right">
+                 <span id="ctl00_BodyContent_lblOldApplicatonNo"></span>
+                 <span id="ctl00_BodyContent_lbFinanceCheck">实习&nbsp;&nbsp;2017/9/7 13:16:07(kaixque(阙凯昕) 申请单打印);</span>&nbsp;
+                 </td>
+        </tr>
+    </tbody></table>
+
+    <script>
+        function setTrMemoHeight() {
+            var trMemo = document.getElementById("trMemo");
+            var table = trMemo.parentNode.parentNode;
+            var rows = table.rows;
+            var heights = 0;
+            for (var i = 0; i < rows.length; i++) {
+                if (rows[i].id == null || rows[i].id != "trMemo") {
+                    heights = heights + rows[i].clientHeight;
+                }
+            }
+            if (heights >= table.height) {
+                trMemo.style.height = '';
+            }
+            else {
+                trMemo.style.height = table.height - heights;;
+            }
+        }
+
+        setTrMemoHeight();
+        $(document).ready(function() {
+            var text = $('#ctl00_BodyContent_lbTitle').html();
+           
+            text = text.replace("CD", "CDG");
+            text = text.replace("MI", "MIG");
+            text = text.replace("IE", "IEG");
+            text = text.replace("OM", "OMG");
+            text = text.replace("SN", "SNG");
+            text = text.replace("TE", "TEG");
+            text = text.replace("EC", "ECC");
+            text = text.replace("B0", "CDG");
+            text = text.replace("B1", "MIG");
+            text = text.replace("B3", "IEG");
+            text = text.replace("B4", "OMG");
+            text = text.replace("B2", "SNG");
+            text = text.replace("O1", "TEG");
+            text = text.replace("O2", "TEG");            
+            $('#ctl00_BodyContent_lbTitle').html(text);
+                        
+//            B0企业发展系统	CDG企业发展事业群
+//            B1无线业务系统	MIG移动互联网事业群
+//            B3互动娱乐业务系统	IEG互动娱乐事业群
+//            B4网络媒体业务系统	OMG网络媒体事业群
+//            B2互联网业务系统	SNG社交网络事业群
+//            O1运营平台系统－基础运营线	TEG技术工程事业群
+
+        });
+    </script>
+
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+Sys.Application.initialize();
+//]]>
+</script>
+</form>
+
+
+</body></html>
